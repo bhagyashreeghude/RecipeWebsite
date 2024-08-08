@@ -1,23 +1,17 @@
-
-import './App.css'
-import {Route, Routes} from "react-router-dom"
-import MainPage from './components/MainPage'
-import Meal from './components/MealItemInfo'
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import MainPage from "./components/MainPage";
+import MealInfo from "./components/MealInfo";
 
 function App() {
-  
   return (
     <>
-    <Routes>
-      <Route path='/' element={<MainPage/>}/>
-      <Route path='/:mealid' element={<MealInfo/>}/>
-
-     
-    </Routes>
-      
-       
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/:mealid" element={<MealInfo />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

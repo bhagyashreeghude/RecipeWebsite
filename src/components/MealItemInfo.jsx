@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom"
 
 const MealItemInfo = ({detail}) => {
     console.log(detail)
+    console.log(detail.idMeal)
   return (
     <div className="w-96 m-2 p-2 shadow-xl">
         <img  src={detail?.strMealThumb} className="broder border-black rounded-lg shadow-lg"/>
